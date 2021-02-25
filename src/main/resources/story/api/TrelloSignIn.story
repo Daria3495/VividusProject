@@ -1,5 +1,6 @@
-Sample story
+Description: Sign in to Trello
 
+GivenStories: story/api/PreCondition.story
 					 
 Scenario:  Navigation on Trello main page for logining
 Given I am on the main application page
