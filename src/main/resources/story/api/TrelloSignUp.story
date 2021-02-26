@@ -22,7 +22,7 @@ Scenario:  Create several users on Trello
 When I enter '<fullName>' in a field by the xpath '//*[@id='displayName']'
 When I enter '<password>' in a field by the xpath '//*[@id='password']'
 When I click on an element by the xpath '//*[@id='signup-submit']'
-Then an element by the cssSelector  #rc-imageselect
+Then an element by the xpath '//*[@class='sc-iAyFgw jTGMge']' exists
 Examples:
 |fullName|password|
 |#{generate(Name.fullName)}|#{generate(Internet.password)}|
