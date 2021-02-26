@@ -13,10 +13,8 @@ When I COMPARE_AGAINST baseline with `testBaseline` ignoring:
 
 
 Scenario: Validate Remote Team Hub
-When I click on an element by the xpath '//*[@aria-label='HouseIcon']'
-When I click on an element by the xpath '//*[text()='Templates']'
-When I wait until an element with the xpath '//*[@title='Remote Work']' appears
-When I click on an element by the xpath '//*[@title='Remote Work']'
+When I navigate on Templates page
+When I navigate to the Remote Work template
 When I click on an element by the xpath '//*[@title='Remote Team Hub' and text()='Remote Team Hub']'
 When I COMPARE_AGAINST baseline with `remote` using screenshot configuration:
 |webFooterToCut|
@@ -39,11 +37,8 @@ When I COMPARE_AGAINST baseline with `homeBoard` ignoring:
 
 
 Scenario: Verifying Contact Review page
-When I click on an element by the xpath '//*[@aria-label='HouseIcon']'
-When I click on an element by the xpath '//*[text()='Templates']'
-When I click on an element by the xpath '//*[text()='Sales']'
-When I wait until an element with the xpath '//*[@title='Contract Review']' appears
-When I click on an element by the xpath '//a[@title='Contract Review']'
+When I navigate on Templates page
+When I navigate to the Contact Review template
 When I wait until an element with the xpath '//div[@class='EvG4hrraiyGarI']' appears
 When I COMPARE_AGAINST baseline with `contractReview` ignoring:
 |ELEMENT                      |
@@ -53,10 +48,7 @@ When I COMPARE_AGAINST baseline with `contractReview` ignoring:
 
 
 Scenario: Verifying Personal
-When I click on an element by the xpath '//*[@aria-label='HouseIcon']'
-When I click on an element by the xpath '//*[text()='Templates']'
-When I click on an element by the xpath '//*[text()='Personal']'
-When I wait until an element with the xpath '//*[@title='Christmas Planner']' appears
-When I click on an element by the xpath '//*[text()='Christmas Planner']'
+When I navigate on Templates page
+When I navigate to the Christmas Planner template
 When I wait until an element with the xpath '//div[@class='member-cards-board js-board body-custom-board-background body-dark-board-background']' appears
 When I COMPARE_AGAINST baseline with `christmasPlanner`
